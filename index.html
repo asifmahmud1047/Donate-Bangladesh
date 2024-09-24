@@ -52,127 +52,1042 @@
       };
     </script>
   </head>
-  <body>
-    <!-- Header Section content -->
-    <header class="text-black bg-background">
-      <!-- Navigation Menu Content -->
-      <nav class="w-10/12 pb-12 mx-auto flex justify-between items-center py-2">
-        <button class="btn bg-buttonColor px-8 font-bold">Blog</button>
-        <div class="flex items-center gap-4">
-          <img src="./assets/logo.png" alt="" />
-          <h1 class="font-bold">Donate Bangladesh</h1>
-        </div>
-        <div class="flex items-center gap-1">
-          <img src="./assets/coin.png" alt="" />
-          <p class="font-semibold">
-            <span>****</span>
-            <span>BDT</span>
-          </p>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <!-- Donation History -->
-      <section
-        class="mx-auto w-64 flex justify-between items-center mt-16 mb-6"
+  <body
+    class="bg-white highlighter-context"
+    data-new-gr-c-s-check-loaded="14.1196.0"
+    data-gr-ext-installed=""
+    cz-shortcut-listen="true"
+  >
+    <header class="w-full flex h-24">
+      <div
+        id="navBtnDiv"
+        class="flex justify-center items-center w-[8%] bg-pink-50"
       >
-        <button class="btn bg-buttonColor px-8 font-bold">Donation</button>
-        <button class="btn bg-buttonColor px-8 font-bold" disabled>
+        <button
+          id="navButton"
+          class="btn bg-pink-50 hover:bg-pink-50 border-none w-[50%] castom"
+        ></button>
+      </div>
+      <div
+        id="allNavi"
+        class="w-full bg-pink-50 flex justify-around items-center py-6 px-4"
+      >
+        <button id="bloG" class="btn bg-lime-400 hover:text-white text-black">
+          Blog
+        </button>
+        <div class="flex items-center gap-2 ml-4 md:ml-0">
+          <img class="w-[13%] md:w-[20%]" src="./assets/logo.png" alt="" />
+          <h1 class="text-black md:font-bold">Donate Bangladesh</h1>
+        </div>
+        <div class="flex items-center gap-2">
+          <img src="./assets/coin.png" alt="" />
+          <div class="flex items-center gap-1 mr-2 md:mr-0">
+            <h1 id="Main_blance" class="text-black">5500</h1>
+            <h1 class="text-black">BDT</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container mx-auto pt-12">
+      <div class="flex justify-center gap-3">
+        <button
+          id="BtnDonation"
+          class="btn bg-lime-400 text-black font-bold hover:text-white"
+        >
+          Donation
+        </button>
+        <button
+          id="BtnHistory"
+          class="btn text-black bg-lime-400 px-5 hover:text-white"
+        >
           History
         </button>
-      </section>
-
-      <!-- Donate -->
-      <section class="max-w-6xl mx-auto p-6">
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Card 1 -->
-          <div class="bg-white p-4 shadow-md rounded-lg">
-            <img
-              src="./assets/noakhali.png"
-              alt="Flood in Noakhali"
-              class="rounded-t-lg"
-            />
-            <div class="p-4">
-              <h2 class="text-xl font-bold">
-                Donate for Flood at Noakhali, Bangladesh
-              </h2>
-              <p class="text-gray-600 my-2">
-                The recent floods in Noakhali have caused significant damage to
-                homes and infrastructure...
-              </p>
-              <input
-                type="text"
-                class="border border-gray-300 p-2 w-full rounded-md"
-                placeholder="Write Donation Amount"
-              />
-              <button
-                class="bg-green-500 text-white p-2 w-full mt-4 rounded-lg"
-                onclick="showModal()"
-              >
-                Donate Now
-              </button>
+      </div>
+      <div id="donationsec" class="">
+        <div
+          class="md:flex md:gap-8 mx-auto w-[90%] md:w-full pt-8 justify-center border py-5 mt-6 rounded"
+        >
+          <div class="md:w-[45%] w-[90%] mx-auto overflow-hidden mb-8">
+            <img class="w-full h-full" src="./assets/noakhali.png" alt="" />
+          </div>
+          <!-- absolute -->
+          <div
+            id="donate1N"
+            class="absolute shadow-2xl md:bg-white bg-green-300 rounded-xl md:top-[35%] top-[50%] hidden"
+          >
+            <div
+              id="appEnd"
+              class="px-12 py-8 flex-col flex items-center justify-center gap-3"
+            >
+              <h1 id="hh11" class="text-3xl text-black mb-2">Congrates!</h1>
+              <img src="./Assignment-5_files/coin.png" alt="" />
+              <p class="mt-3">You Have Donated for Humankind</p>
+              <h2 class="text-2xl text-black">Successfully</h2>
+              <div>
+                <button
+                  id="First_pop_btn1"
+                  class="btn bg-slate-300 hover:bg-zinc-400"
+                >
+                  <span class="text-black w-full">Close Confirmation</span>
+                </button>
+              </div>
             </div>
           </div>
-
-          <!-- Card 2 -->
-          <div class="bg-white p-4 shadow-md rounded-lg">
-            <img
-              src="./assets/feni.png"
-              alt="Flood in Feni"
-              class="rounded-t-lg"
-            />
-            <div class="p-4">
-              <h2 class="text-xl font-bold">
-                Donate for Flood Relief in Feni, Bangladesh
-              </h2>
-              <p class="text-gray-600 my-2">
-                The recent floods in Feni have devastated local communities...
-              </p>
+          <!-- absolute -->
+          <div class="md:w-[45%] w-[90%] mx-auto">
+            <span
+              class="flex gap-1 w-32 h-12 p-2 bg-slate-200 justify-center rounded-xl"
+            >
+              <img src="./assets/coin.png" alt="" />
+              <div class="flex items-center gap-1">
+                <h1 id="NoakhaliAdd" class="text-black">0</h1>
+                <h1 class="text-black">BDT</h1>
+              </div>
+            </span>
+            <h1 class="text-xl">Donate for Flood at Noakhali, Bangladesh</h1>
+            <p class="my-3 xl:my-20">
+              The recent floods in Noakhali have caused significant damage to
+              homes infrastructure. Your donation will help provide essential
+              supplies and to those affected by this disaster. Every
+              contribution, big or small, makes difference. Please join us in
+              supporting the relief efforts and making a positive impact on the
+              lives of those in need.
+            </p>
+            <div class="flex-col flex gap-3 w-full">
               <input
+                id="firstInput"
                 type="text"
-                class="border border-gray-300 p-2 w-full rounded-md"
                 placeholder="Write Donation Amount"
+                class="p-2 mt-3 w-[100%] mx-auto border bg-transparent rounded"
               />
-              <button
-                class="bg-green-500 text-white p-2 w-full mt-4 rounded-lg"
-                onclick="showModal()"
-              >
-                Donate Now
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="bg-white p-4 shadow-md rounded-lg">
-            <img
-              src="./assets/quota-protest.png"
-              alt="Quota Movement"
-              class="rounded-t-lg"
-            />
-            <div class="p-4">
-              <h2 class="text-xl font-bold">
-                Aid for Injured in the Quota Movement
-              </h2>
-              <p class="text-gray-600 my-2">
-                The recent Quota movement has resulted in injuries and
-                significant hardship for many individuals...
-              </p>
-              <input
-                type="text"
-                class="border border-gray-300 p-2 w-full rounded-md"
-                placeholder="Write Donation Amount"
-              />
-              <button
-                class="bg-green-500 text-white p-2 w-full mt-4 rounded-lg"
-                onclick="showModal()"
-              >
-                Donate Now
-              </button>
+              <button id="firstBtn" class="btn bg-lime-400">Donate Now</button>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer></footer>
+        <div
+          class="md:flex md:gap-8 pt-8 justify-center w-[90%] md:w-full mx-auto border py-5 mt-6 rounded"
+        >
+          <div class="md:w-[45%] mx-auto mb-8 w-[90%] overflow-hidden">
+            <img class="w-full h-full" src="./assets/feni.png" alt="" />
+          </div>
+          <!-- absolute -->
+          <div
+            id="secondSec_PoP"
+            class="absolute shadow-2xl md:bg-white bg-green-300 rounded-xl md:top-[99%] top-[145%] hidden"
+          >
+            <div
+              class="px-12 py-8 flex-col flex items-center justify-center gap-3"
+            >
+              <h1 class="text-3xl text-black mb-2">Congrates!</h1>
+              <img src="./Assignment-5_files/coin.png" alt="" />
+              <p class="mt-3">You Have Donated for Humankind</p>
+              <h2 class="text-2xl text-black">Successfully</h2>
+              <div>
+                <button id="pupBtN2" class="btn bg-slate-300 hover:bg-zinc-400">
+                  <span class="text-black w-full">Close Confirmation</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- absolute -->
+          <div class="md:w-[45%] mx-auto w-[90%]">
+            <span
+              class="flex gap-1 w-32 h-12 p-2 bg-slate-200 justify-center rounded-xl"
+            >
+              <img src="./assets/coin.png" alt="" />
+              <div class="flex items-center gap-1">
+                <h1 id="SecondFund" class="text-black">600</h1>
+                <h1 class="text-black">BDT</h1>
+              </div>
+            </span>
+            <h1 class="text-xl">Donate for Flood Relief in Feni,Bangladesh</h1>
+            <p class="my-3 xl:my-20">
+              The recent floods in Noakhali have caused significant damage to
+              homes infrastructure. Your donation will help provide essential
+              supplies and to those affected by this disaster. Every
+              contribution, big or small, makes difference. Please join us in
+              supporting the relief efforts and making a positive impact on the
+              lives of those in need.
+            </p>
+            <div class="flex-col flex gap-3 w-full">
+              <input
+                id="secondInputAmount"
+                type="text"
+                placeholder="Write Donation Amount"
+                class="p-2 mt-3 w-[100%] mx-auto border bg-transparent rounded"
+              />
+              <button id="secondBtn" class="btn bg-lime-400">Donate Now</button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="md:flex md:gap-8 pt-8 justify-center w-[90%] md:w-full mx-auto border py-5 mt-6 rounded"
+        >
+          <div class="md:w-[45%] mx-auto w-[90%] mb-8 overflow-hidden">
+            <img
+              class="w-full h-full"
+              src="./assets/quota-protest.png"
+              alt=""
+            />
+          </div>
+          <!-- absolute -->
+          <div
+            id="thirD_poP_Sec"
+            class="absolute shadow-2xl md:bg-white bg-green-300 rounded-xl md:top-[158%] top-[238%] hidden"
+          >
+            <div
+              class="px-12 py-8 flex-col flex items-center justify-center gap-3"
+            >
+              <h1 class="text-3xl text-black mb-2">Congrates!</h1>
+              <img src="./assets/coin.png" alt="" />
+              <p class="mt-3">You Have Donated for Humankind</p>
+              <h2 class="text-2xl text-black">Successfully</h2>
+              <div>
+                <button
+                  id="thIrdPOP_btN"
+                  class="btn bg-slate-300 hover:bg-zinc-400"
+                >
+                  <span class="text-black w-full">Close Confirmation</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- absolute -->
+          <div class="md:w-[45%] mx-auto w-[90%]">
+            <span
+              class="flex gap-1 w-32 h-12 p-2 bg-slate-200 justify-center rounded-xl"
+            >
+              <img src="./assets/coin.png" alt="" />
+              <div class="flex items-center gap-1">
+                <h1 id="thirdFund" class="text-black">2400</h1>
+                <h1 class="text-black">BDT</h1>
+              </div>
+            </span>
+            <h1 class="text-xl">Air for Injured in the Quota Movement</h1>
+            <p class="my-3 xl:my-20">
+              The recent floods in Noakhali have caused significant damage to
+              homes infrastructure. Your donation will help provide essential
+              supplies and to those affected by this disaster. Every
+              contribution, big or small, makes difference. Please join us in
+              supporting the relief efforts and making a positive impact on the
+              lives of those in need.
+            </p>
+            <div class="flex-col flex gap-3 w-full">
+              <input
+                id="thirdInput"
+                type="text"
+                placeholder="Write Donation Amount"
+                class="p-2 mt-3 w-[100%] mx-auto border bg-transparent rounded"
+              />
+              <button id="thirdBtn" class="btn bg-lime-400">Donate Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="historySec" class="container mx-auto md:p-20 w-[90%] p-2 hidden">
+      <!-- <div class="border p-2 rounded ">
+            <h1 class="text-black font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
+            <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+        </div> -->
+    </div>
+    <footer class="bg-pink-50 h-32 mt-20"></footer>
+    <script src="/app.js.download"></script>
+
+    <script></script>
+
+    <div style="position: absolute; z-index: 2147483647; left: 0px; top: 0px">
+      <template shadowrootmode="open"
+        ><style>
+          .host {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* This ensures clicks are passed through to elements below */
+          }
+
+          .quick-actions-trigger,
+          .quick-action-menu {
+            pointer-events: auto; /* Ensure that the menu and trigger can still be interacted with */
+          }
+
+          .quick-actions-trigger {
+            position: absolute;
+            background: linear-gradient(
+              180deg,
+              rgb(64 64 64 / 89%),
+              rgb(86 86 86 / 89%)
+            );
+            border: 1px solid #666666;
+            border-radius: 6px;
+            width: 85px;
+            height: 15px;
+            line-height: 15px;
+            text-align: center;
+            font-family: Inter, sans-serif;
+            font-weight: 400;
+            letter-spacing: -0.3px;
+            color: #e8e8e8;
+            font-size: 13px;
+            cursor: pointer;
+            padding: 4px;
+            display: none;
+            z-index: 2147483647;
+            backdrop-filter: blur(1.7px);
+          }
+
+          .quick-action-menu {
+            position: absolute;
+            flex-direction: column;
+            align-items: normal;
+            gap: 5px;
+            background: linear-gradient(
+              180deg,
+              rgb(64 64 64 / 89%),
+              rgb(86 86 86 / 89%)
+            );
+            border: 1px solid #666666;
+            border-radius: 6px;
+            width: 70px;
+            height: fit-content;
+            font-family: Inter, sans-serif;
+            font-weight: 400;
+            letter-spacing: -0.3px;
+            color: #e8e8e8;
+            font-size: 13px;
+            cursor: default;
+            padding: 4px;
+            display: none;
+            z-index: 2147483647;
+            backdrop-filter: blur(1.5px);
+          }
+
+          .menu-option {
+            cursor: default;
+            padding: 3px;
+            padding-left: 8px;
+            border-radius: 5px;
+            text-align: left;
+            height: 15.5px;
+            line-height: 15.5px;
+          }
+
+          .menu-option:hover {
+            background: var(--hover-background);
+          }
+
+          .explain-options-menu {
+            position: absolute;
+            flex-direction: column;
+            align-items: normal;
+            gap: 5px;
+            background: linear-gradient(
+              180deg,
+              rgb(64 64 64 / 89%),
+              rgb(86 86 86 / 89%)
+            );
+            border: 1px solid #666666;
+            border-radius: 6px;
+            width: 90px;
+            height: fit-content;
+            font-family: Inter, sans-serif;
+            font-weight: 400;
+            letter-spacing: -0.3px;
+            color: #e8e8e8;
+            font-size: 13px;
+            cursor: default;
+            padding: 4px;
+            display: none;
+            z-index: 2147483647;
+            backdrop-filter: blur(1.5px);
+          }
+
+          .translate-options-menu {
+            position: absolute;
+            flex-direction: column;
+            align-items: normal;
+            gap: 5px;
+            background: linear-gradient(
+              180deg,
+              rgb(64 64 64 / 89%),
+              rgb(86 86 86 / 89%)
+            );
+            border: 1px solid #666666;
+            border-radius: 6px;
+            width: 140px;
+            height: 220px;
+            font-family: Inter, sans-serif;
+            font-weight: 400;
+            letter-spacing: -0.3px;
+            color: #e8e8e8;
+            font-size: 13px;
+            cursor: default;
+            padding: 4px;
+            display: none;
+            z-index: 2147483647;
+            backdrop-filter: blur(1.5px);
+            overflow: auto;
+          }
+
+          .translate-options-menu::-webkit-scrollbar {
+            display: none;
+          }
+
+          .explain-option,
+          .translate-option {
+            cursor: default;
+            padding: 3px;
+            padding-left: 8px;
+            border-radius: 5px;
+            text-align: left;
+            height: 15.5px;
+            line-height: 15.5px;
+          }
+
+          .explain-option:hover,
+          .translate-option:hover {
+            background: var(--hover-background);
+          }
+
+          .dropdown {
+            position: absolute;
+            background: white;
+            border: 1px solid black;
+            padding: 5px;
+            display: none;
+            z-index: 2147483646;
+          }
+
+          .sub-menu {
+            position: absolute;
+            background: white;
+            border: 1px solid black;
+            padding: 5px;
+            display: none;
+            z-index: 2147483645;
+          }
+
+          .sub-menu div {
+            padding: 5px;
+          }
+
+          .highlighted-text {
+            background-color: #85c0ff; /* Or use !important to ensure override */
+          }
+        </style>
+        <div class="quick-actions-trigger" style="display: none">
+          Quick Actions
+        </div>
+        <div class="quick-action-menu" style="display: none">
+          <div
+            class="menu-option"
+            style="--hover-background: linear-gradient(9deg, #007bff, #3887db)"
+          >
+            Explain
+          </div>
+          <div
+            class="menu-option"
+            style="--hover-background: linear-gradient(9deg, #007bff, #3887db)"
+          >
+            Translate
+          </div>
+          <div
+            class="menu-option"
+            style="--hover-background: linear-gradient(9deg, #007bff, #3887db)"
+          >
+            Highlight
+          </div>
+        </div></template
+      >
+    </div>
+    <div>
+      <template shadowrootmode="open"
+        ><style>
+          @import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css");</style
+        ><style>
+          .overlay {
+            width: inherit;
+            height: fit-content;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999999;
+            margin-bottom: 15px;
+          }
+
+          .sign-in .alert-box {
+            position: relative;
+            height: 300px;
+            width: 530px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            padding: 40px 35px;
+            background: linear-gradient(27deg, rgb(23 23 23), rgb(34 34 34));
+            border: 1px solid rgb(115 115 115 / 53%);
+            border-radius: 20px;
+            overflow: hidden;
+            color: #bdc1c6;
+            font-family: arial, sans-serif;
+            line-height: normal;
+            box-shadow: -1px 0px 0px #000, /* Left */ 0px -1px 0px #000,
+              /* Top */ 0px 1px 0px #000, /* Bottom */ 1px 0px 0px #000;
+          }
+
+          .alert-close-button {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 20px;
+            padding: 3px 5px 2px 6px;
+            border-radius: 9px;
+            color: rgb(232, 232, 232);
+            background: none;
+          }
+
+          .alert-close-button:hover {
+            background: linear-gradient(12deg, #be112a, #f46258);
+          }
+
+          .alert-close-button:active {
+            background: linear-gradient(12deg, #e21d3b, #f9786e);
+          }
+
+          .sign-in .copilot-mascot {
+            width: 160px;
+            position: absolute;
+            bottom: 10px;
+            right: 0px;
+            user-select: none;
+          }
+
+          .alert-title-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+          }
+
+          .sign-in .alert-title {
+            font-family: inherit;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            user-select: none;
+            margin: 0px;
+            background-image: linear-gradient(
+              146deg,
+              #55aee2,
+              hsl(332.76deg 48.88% 50.28%)
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+          }
+
+          .sign-in .alert-message {
+            font-family: inherit;
+            text-align: start;
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none;
+            user-select: none;
+            margin: 0px;
+            line-height: 24px;
+          }
+
+          .alert-button {
+            display: block;
+            position: relative;
+            font-size: 15px;
+            color: #fff;
+            padding: 5px 0px;
+            height: 55px;
+            width: 250px;
+            background: linear-gradient(12deg, #205479, #257694);
+            border: none;
+            border-radius: 12px;
+            cursor: default;
+            user-select: none;
+            overflow: hidden;
+            margin: 0px;
+            z-index: 11;
+            transition: background 0.2s ease;
+          }
+
+          .alert-button:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+              45deg,
+              transparent,
+              #b4b4b433,
+              transparent
+            );
+            transition: left 0.5s ease;
+          }
+
+          .alert-button:hover:before {
+            left: 100%;
+          }
+
+          .alert-button:hover {
+            background-color: #b4b4b433;
+          }
+
+          .alert-button:focus {
+            background: linear-gradient(12deg, #205479, #205479);
+          }
+
+          .voice-alert-button {
+            width: -webkit-fill-available;
+          }
+
+          .sign-in-button {
+            width: 300px;
+          }
+
+          .upgrade .alert-box {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 0px;
+            padding: 0px;
+            background: linear-gradient(0deg, #0f0f0f, #1e1e1e);
+            border: 1px solid rgb(115 115 115 / 53%);
+            border-radius: 18px;
+            overflow: hidden;
+            color: #bdc1c6;
+            font-family: arial, sans-serif;
+            line-height: normal;
+            box-shadow: -1px 0px 0px #000, /* Left */ 0px -1px 0px #000,
+              /* Top */ 0px 1px 0px #000, /* Bottom */ 1px 0px 0px #000;
+          }
+
+          .upgrade .alert-left-section {
+            position: relative;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 24px;
+            padding: 40px 35px;
+            background: linear-gradient(27deg, rgb(23 23 23), rgb(34 34 34));
+            border: none;
+          }
+
+          .upgrade .alert-right-section {
+            position: relative;
+            height: 500px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            gap: 20px;
+            padding: 40px 15px;
+            background: linear-gradient(
+              335deg,
+              rgb(15, 15, 15),
+              rgb(30, 30, 30)
+            );
+            border: none;
+          }
+
+          .upgrade .alert-title {
+            font-family: inherit;
+            text-align: start;
+            font-size: 22px;
+            font-weight: 600;
+            text-decoration: none;
+            user-select: none;
+            margin: 0px;
+          }
+
+          .upgrade .alert-message {
+            font-family: inherit;
+            text-align: start;
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none;
+            user-select: none;
+            margin: 0px;
+            line-height: 24px;
+          }
+
+          .upgrade .features-list-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 10px;
+          }
+
+          .upgrade .features-list-heading {
+            font-family: inherit;
+            text-align: start;
+            font-size: 17px;
+            font-weight: 600;
+            text-decoration: none;
+            user-select: none;
+            margin: 0px;
+            line-height: 24px;
+          }
+
+          .upgrade .features-list-1-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            gap: 10px;
+          }
+
+          .upgrade i {
+            color: #f2f2f2;
+          }
+
+          .upgrade .bi-lightning-charge-fill {
+            font-size: 14px;
+          }
+
+          .upgrade .bi-youtube {
+            font-size: 15px;
+          }
+
+          .upgrade .bi-search {
+            font-size: 14px;
+          }
+
+          .upgrade .bi-volume-up-fill {
+            font-size: 16px;
+          }
+
+          .upgrade .bi-stars {
+            font-size: 15px;
+          }
+
+          .upgrade .bi-soundwave {
+            font-size: 16px;
+          }
+
+          .upgrade .features-list {
+            font-family: inherit;
+            text-align: start;
+            font-size: 15px;
+            font-weight: 400;
+            text-decoration: none;
+            user-select: none;
+            margin: 0px;
+            line-height: 24px;
+          }
+
+          .upgrade .end-message {
+            font-family: inherit;
+            text-align: start;
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none;
+            user-select: none;
+            margin: 0px;
+            line-height: 24px;
+          }
+
+          .upgrade .personal-tutor-message-wrapper {
+            font-size: 50px;
+            margin-top: 40px;
+            margin-right: 40px;
+            margin-left: 40px;
+            text-align: end;
+          }
+
+          .upgrade .personal-tutor-message {
+            font-family: inherit;
+            font-weight: 400;
+            text-decoration: none;
+            user-select: none;
+            margin: 0px;
+            line-height: 24px;
+            color: rgb(255 255 255 / 42%);
+          }
+
+          .upgrade .blue {
+            background-image: linear-gradient(
+              146deg,
+              #55aee2,
+              hsl(332.76deg 48.88% 50.28%)
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+          }
+
+          .upgrade .jewel-object {
+            width: 90px;
+            height: 90px;
+            border-radius: 300px;
+            background: linear-gradient(
+              12deg,
+              rgb(228, 115, 189),
+              rgb(156, 83, 232),
+              rgb(120, 168, 255)
+            );
+            position: absolute;
+            bottom: 180px;
+            right: -25px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px 6px,
+              rgba(0, 0, 0, 0.19) 0px 0px 3px 0px;
+            z-index: 10;
+            opacity: 70%;
+          }
+
+          .upgrade .blue-object {
+            width: 330px;
+            height: 330px;
+            border-radius: 300px;
+            background: linear-gradient(
+              12deg,
+              rgb(49, 122, 255),
+              rgb(137, 179, 255)
+            );
+            position: absolute;
+            bottom: -100px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 30px 30px,
+              rgba(0, 0, 0, 0.19) 0px 0px 3px 0px;
+            right: -60px;
+            z-index: 9;
+            opacity: 70%;
+          }
+
+          .upgrade .green-object {
+            width: 110px;
+            height: 110px;
+            border-radius: 200px;
+            background: linear-gradient(
+              12deg,
+              rgb(22, 159, 69),
+              rgb(64, 231, 123)
+            );
+            position: absolute;
+            bottom: 100px;
+            right: 220px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 18px 18px,
+              rgba(0, 0, 0, 0.19) 0px 0px 3px 0px;
+            z-index: 8;
+            opacity: 70%;
+          }
+
+          .upgrade .pink-object {
+            width: 160px;
+            height: 160px;
+            border-radius: 200px;
+            background: linear-gradient(
+              12deg,
+              rgb(176, 28, 190),
+              rgb(228, 92, 240)
+            );
+            position: absolute;
+            bottom: -10px;
+            right: 220px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 22px 22px,
+              rgba(0, 0, 0, 0.19) 0px 0px 3px 0px;
+            z-index: 7;
+            opacity: 70%;
+          }
+
+          .upgrade .yellow-object {
+            width: 90px;
+            height: 90px;
+            border-radius: 200px;
+            background: linear-gradient(
+              12deg,
+              rgb(194, 124, 31),
+              rgb(198, 184, 30)
+            );
+            position: absolute;
+            bottom: 80px;
+            right: 350px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 12px 12px,
+              rgba(0, 0, 0, 0.19) 0px 0px 3px 0px;
+            z-index: 6;
+            opacity: 70%;
+          }
+
+          .upgrade .red-object {
+            width: 50px;
+            height: 50px;
+            border-radius: 200px;
+            background: linear-gradient(
+              12deg,
+              rgb(190, 17, 42),
+              rgb(255, 97, 86)
+            );
+            position: absolute;
+            bottom: 180px;
+            right: 370px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 3px 0px,
+              rgba(0, 0, 0, 0.19) 0px 0px 3px 0px;
+            z-index: 1;
+            opacity: 70%;
+          }
+
+          .alert-container {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            user-select: none;
+            padding-left: 10px;
+          }
+
+          .copilotalertmodal {
+            position: absolute;
+            height: fit-content;
+            width: 266px;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 15px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            top: 50%;
+            background: linear-gradient(273deg, #1e2732, #232c39);
+            border: 1px solid rgb(90, 94, 101);
+            border-radius: 18px;
+            box-shadow: rgb(54, 58, 63) -1px 0px 0px,
+              rgb(54, 58, 63) 0px -1px 0px, rgb(54, 58, 63) 0px 1px 0px,
+              rgb(54, 58, 63) 1px 0px 0px;
+            z-index: 1000;
+            font-family: Inter, sans-serif;
+            user-select: none;
+          }
+
+          .bi-exclamation-lg {
+            color: rgb(242, 242, 242);
+            font-size: 20px;
+            display: flex;
+            background: linear-gradient(
+              12deg,
+              rgb(190, 17, 42),
+              rgb(244, 98, 88)
+            );
+            padding: 5px;
+            border-radius: 9px;
+          }
+
+          .sign-in-up-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+
+          .sign-in-alert-button,
+          .sign-up-alert-button,
+          .upgrade-button,
+          .try-again-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            font-size: 14px;
+            padding: 5px 0px;
+            height: 30px;
+            width: 179px;
+            background-color: transparent;
+            color: #eee;
+            border: 1px solid #dddddd3b;
+            border-radius: 12px;
+            cursor: default;
+            user-select: none;
+            overflow: hidden;
+            margin: 0px;
+          }
+
+          .sign-in-alert-button:before,
+          .sign-up-alert-button:before,
+          .upgrade-button:before,
+          .try-again-button:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+              45deg,
+              transparent,
+              #b4b4b433,
+              transparent
+            );
+            transition: left 0.5s ease;
+          }
+
+          .sign-in-alert-button:hover:before,
+          .sign-up-alert-button:hover:before,
+          .upgrade-button:hover:before,
+          .try-again-button:hover:before {
+            left: 100%;
+          }
+
+          .sign-in-alert-button:hover,
+          .sign-up-alert-button:hover,
+          .upgrade-button:hover,
+          .try-again-button:hover {
+            background-color: #b4b4b433;
+          }
+        </style></template
+      >
+    </div>
+    <style>
+      @import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css");
+    </style>
   </body>
+  <grammarly-desktop-integration data-grammarly-shadow-root="true"
+    ><template shadowrootmode="open"
+      ><style>
+        div.grammarly-desktop-integration {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+          -moz-user-select: none;
+          -webkit-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        div.grammarly-desktop-integration:before {
+          content: attr(data-content);
+        }
+      </style>
+      <div
+        aria-label="grammarly-integration"
+        role="group"
+        tabindex="-1"
+        class="grammarly-desktop-integration"
+        data-content='{"mode":"limited","isActive":false,"isUserDisabled":false}'
+      ></div></template
+  ></grammarly-desktop-integration>
 </html>
