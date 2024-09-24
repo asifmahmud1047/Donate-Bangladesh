@@ -1,3 +1,9 @@
+// script.js
+document.getElementById("goToOtherPage").addEventListener("click", function () {
+  // Redirect to other.html
+  window.location.href = "other.html";
+});
+
 document.getElementById("firstBtn").addEventListener("click", function () {
   const mainBlance = getInputFieldValueToNum("Main_blance");
   const inputAmount = input("firstInput");
