@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/f811dd765f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              buttonColor: "#B4F461",
+              background: "rgb(249, 247, 243)",
+
+              // secondary: '#030712',
+              // couponOne: '#ffbf0f',
+              // couponTwo: '#f78c9c',
+              // mobileMenu: '#f7f8f8',
+              // body: '#03071299',
+              // buttonColor: 'rgba(29, 209, 0, 0.15)',
+            },
+            fontFamily: {
+              Lexend: "Lexend",
+              // RaleWay: 'Raleway',
+              // Inter: 'Inter',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Header Section content -->
+    <header class="text-black bg-background">
+      <!-- Navigation Menu Content -->
+      <nav class="w-10/12 pb-12 mx-auto flex justify-between items-center py-2">
+        <button class="btn bg-buttonColor px-8 font-bold">Blog</button>
+        <div class="flex items-center gap-4">
+          <img src="./assets/logo.png" alt="" />
+          <h1 class="font-bold">Donate Bangladesh</h1>
+        </div>
+        <div class="flex items-center gap-1">
+          <img src="./assets/coin.png" alt="" />
+          <p class="font-semibold">
+            <span>****</span>
+            <span>BDT</span>
+          </p>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Donation History -->
+      <section
+        class="mx-auto w-64 flex justify-between items-center mt-16 mb-6"
+      >
+        <button class="btn bg-buttonColor px-8 font-bold">Donation</button>
+        <button class="btn bg-buttonColor px-8 font-bold" disabled>
+          History
+        </button>
+      </section>
+
+      <!-- Donate for Flood at Noakhali, Bangladesh -->
+      <section></section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
